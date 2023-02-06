@@ -1,0 +1,15 @@
+.flexContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.menuPoint {
+    list-style: none;
+    padding: 0 1em;
+}
+
+.menuLink {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $primary-text-color;
+}
