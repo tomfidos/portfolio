@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: $primary-text-color;
+    font-family: $primary-font;
+}
+
+.container {
+    max-width: $small-container;
+    width: $small-container;
+    padding: 0 23px;
+    margin: 0 auto;
+}
+
+@media all and (min-width: $large-container) {
+    .container {
+        max-width: $large-container;
+    }
+}
+
+@media all and (min-width: $extra-large-container) {
+    .container {
+        max-width: $extra-large-container;
+    }
+}
