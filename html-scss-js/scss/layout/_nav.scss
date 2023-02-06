@@ -3,6 +3,12 @@
     justify-content: center;
 }
 
+.menuImage {
+    height: 50px;
+    width: auto;
+    display: flex;
+}
+
 .menuPoint {
     list-style: none;
     padding: 0 1em;
@@ -12,4 +18,6 @@
     text-decoration: none;
     text-transform: uppercase;
     color: $primary-text-color;
+    font-size: $smallest-size;
+    font-weight: 600;
 }
