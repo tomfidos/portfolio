@@ -10,12 +10,17 @@ body {
 .container {
     max-width: $small-container;
     width: $small-container;
-    padding: 0 23px;
+    padding: $basis-padding 23px;
     margin: 0 auto;
+}
+
+.heading {
+    margin: $basis-margin 0;
 }
 
 p {
     margin: $basis-margin 0;
+    font-family: $primary-font;
 }
 
 @media all and (min-width: $large-container) {

@@ -2,28 +2,26 @@
     display: flex;
 
     .flowers {
-        height: 98px;
+        height: 75px;
         width: auto;
         padding-top: $basis-padding + 21px;
-        position: fixed;
+        position: absolute;
         left: 0;
+        top: 82px;
     }
 
     .textes-and-actions {
-
-        %main-heading {
-            font-family: $secondary-font;
-            font-weight: 700;
-        }
     
         .main-heading-top {
-            @extend %main-heading;
+            font-family: $secondary-font;
+            font-weight: 700;
             font-size: $smallest-size;
             text-transform: uppercase;
         }
     
         .main-heading-middle {
-            @extend %main-heading;
+            font-family: $secondary-font;
+            font-weight: 700;
             font-size: 50px;
         }
     
@@ -35,16 +33,79 @@
         .actions {
             display: flex;
 
-            .reserve {
-                @include button;
-                height: $primary-font-size + 2 * $basis-padding;
-                width: auto;
+            %buttons {
                 margin-right: $basis-margin;
+            }
+
+            %buttons:hover {
+                color: $secondary-text-color;
+            }
+
+            .reserve {
+                @include button(0px);
+                @extend %buttons;
+            }
+
+            .watch-story {
+                background-color: $mobile-text-color;
+                @extend %buttons;
+                width: $basic-button-height;
+                border-radius: 50%;
+            }
+
+            p {
+                font-size: $smallest-size;
             }
         }
     }
 
     .cosmetics {
         display: none;
+        position: absolute;
+        right: 0;
+        top: 82px;
     }
+
+    @media all and (min-width: $small) {
+
+        .flowers {
+            height: 100px;
+            opacity: 50%;
+        }
+
+    }
+
+    @media all and (min-width: $medium) {
+
+        .flowers {
+            height: 150px;
+        }
+
+        .cosmetics {
+            display: block;
+            width: 40%;
+        }
+    }
+
+    @media all and (min-width: $large) {
+
+        .flowers {
+            height: 200px;
+        }
+
+    }
+
+    @media all and (min-width: $extra-large) {
+
+        .flowers {
+            height: 300px;
+        }
+
+        .cosmetics {
+            right: 0;
+            width: 30%;
+        }
+
+    }
+
 }

@@ -3,12 +3,14 @@
     flex-wrap: wrap;
 }
 
-@mixin button {
+@mixin button($border-radius: 25px) {
     border-style: none;
     background-color: $primary-background-color;
     color: $mobile-text-color;
     text-transform: uppercase;
     padding: $basis-padding $basis-padding;
     font-size: $primary-font-size;
+    width: 200px;
     cursor: pointer;
+    border-radius: $border-radius;
 }
