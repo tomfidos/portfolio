@@ -2,3 +2,13 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+@mixin button {
+    border-style: none;
+    background-color: $primary-background-color;
+    color: $mobile-text-color;
+    text-transform: uppercase;
+    padding: $basis-padding $basis-padding;
+    font-size: $primary-font-size;
+    cursor: pointer;
+}

@@ -1,7 +1,7 @@
 .flex-header {
     @include flexbox;
     justify-content: space-between;
-    padding: 12px 0;
+    padding: $basis-padding 0;
 
     .menu-image {
         height: 50px;

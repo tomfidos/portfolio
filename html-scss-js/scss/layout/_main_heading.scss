@@ -1,0 +1,50 @@
+.flex-main-heading {
+    display: flex;
+
+    .flowers {
+        height: 98px;
+        width: auto;
+        padding-top: $basis-padding + 21px;
+        position: fixed;
+        left: 0;
+    }
+
+    .textes-and-actions {
+
+        %main-heading {
+            font-family: $secondary-font;
+            font-weight: 700;
+        }
+    
+        .main-heading-top {
+            @extend %main-heading;
+            font-size: $smallest-size;
+            text-transform: uppercase;
+        }
+    
+        .main-heading-middle {
+            @extend %main-heading;
+            font-size: 50px;
+        }
+    
+        .main-heading-bottom {
+            font-size: $primary-font-size;
+            font-weight: 400;
+        }
+    
+        .actions {
+            display: flex;
+
+            .reserve {
+                @include button;
+                height: $primary-font-size + 2 * $basis-padding;
+                width: auto;
+                margin-right: $basis-margin;
+            }
+        }
+    }
+
+    .cosmetics {
+        display: none;
+    }
+}
