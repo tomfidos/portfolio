@@ -1,23 +1,59 @@
-.flex-container {
-    display: flex;
-    justify-content: center;
-}
+.flex-space-between {
+    @include flexbox;
+    justify-content: space-between;
+    padding: 12px 0;
 
-.menu-image {
-    height: 50px;
-    width: auto;
-    display: flex;
-}
+    .menu-image {
+        height: 50px;
+        width: auto;
+    }
 
-.menu-point {
-    list-style: none;
-    padding: 0 1em;
-}
+    %mobile-controls {
+        font-size: 28px;
+        line-height: 50px;
+        cursor: pointer;
+    }
 
-.menu-link {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: $primary-text-color;
-    font-size: $smallest-size;
-    font-weight: 600;
+    .hamburger {
+        @extend %mobile-controls;
+        color: $primary-background-color;
+    }
+
+    .menu {
+        @include flexbox;
+        flex-direction: column;
+        display: none;
+        background-color: $primary-background-color;
+        max-width: $extra-small;
+        width: $extra-small;
+
+        .menu-close {
+            @extend %mobile-controls;
+            color: $mobile-text-color;
+            padding: 0 15px;
+            text-align: end;
+        }
+
+        .flex-centered {
+            @include flexbox;
+            flex-direction: column;
+            padding: 0 0;
+
+            .menu-point {
+                list-style: none;
+                padding: 1em 1em;
+                text-align: end;
+            }
+
+            .menu-link {
+                text-decoration: none;
+                text-transform: uppercase;
+                color: $mobile-text-color;
+                font-size: $smallest-size;
+                font-weight: 600;
+            }
+
+        }
+    }
+
 }

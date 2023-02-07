@@ -1,8 +1,9 @@
 /* Settings and helpers */
     @import "utils/variables";
+    @import "utils/mixins";
 
 /* Layout */
     @import "layout/nav";
 
 /* Base styles */
-    @import "base/global"
+    @import "base/global";
