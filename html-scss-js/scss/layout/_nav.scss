@@ -17,6 +17,10 @@
     .hamburger {
         @extend %mobile-controls;
         color: $primary-background-color;
+
+        &.hide {
+            display: none;
+        }
     }
 
     .menu {
@@ -26,6 +30,10 @@
         background-color: $primary-background-color;
         max-width: $extra-small;
         width: $extra-small;
+
+        &.open {
+            display: flex;
+        }
 
         .menu-close {
             @extend %mobile-controls;
