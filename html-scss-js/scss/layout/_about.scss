@@ -1,0 +1,43 @@
+.about {
+    text-align: center;
+
+    .about-image {
+        height: 75px;
+        width: auto;
+    }
+
+    .heading-top {
+        font-family: $secondary-font;
+        font-weight: 700;
+        font-size: $smallest-size;
+        text-transform: uppercase;
+    }
+
+    .heading-middle {
+        font-family: $secondary-font;
+        font-weight: 700;
+        font-size: $heading-size;
+    }
+
+    .heading-bottom {
+        font-size: $primary-font-size;
+        font-weight: 300;
+    }
+
+    button {
+        @include button;
+    }
+    
+    button:hover {
+        color: $secondary-text-color;
+    }
+
+    @media all and (min-width: $medium) {
+        
+        .heading-bottom {
+            width: 50%;
+            margin: $basis-margin auto;
+        }
+    }
+
+}
