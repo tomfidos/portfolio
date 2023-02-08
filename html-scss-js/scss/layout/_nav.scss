@@ -33,12 +33,16 @@
 
         &.open {
             display: flex;
+            position: fixed;
+            top: 0;
+            right: 0;
         }
 
         .menu-close {
             @extend %mobile-controls;
             color: $mobile-text-color;
-            padding: 0 15px;
+            padding-top: 20px;
+            padding-right: 34px;
             text-align: end;
         }
 
