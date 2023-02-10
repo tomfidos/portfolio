@@ -21,16 +21,43 @@ body {
 p {
     margin: $basis-margin 0;
     font-family: $primary-font;
+    text-align: center;
 }
 
 @media all and (min-width: $large-container) {
-    .container {
+    .basic-container {
         max-width: $large-container;
     }
 }
 
 @media all and (min-width: $extra-large-container) {
-    .container {
+    .basic-container {
         max-width: $extra-large-container;
+    }
+}
+
+.standard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.elements {
+    display: flex;
+    flex-direction: column;
+}
+
+.standard-element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: $basis-padding $basis-padding;
+    margin: $basis-margin 0;
+    box-shadow: 0 5px 20px #f0f0f0;
+}
+
+@media all and (min-width: $medium) {
+    .elements {
+        flex-direction: row;
     }
 }
