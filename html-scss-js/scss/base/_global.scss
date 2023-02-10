@@ -56,6 +56,10 @@ p {
     box-shadow: 0 5px 20px #f0f0f0;
 }
 
+form {
+    background-color: $primary-background-color;
+}
+
 @media all and (min-width: $medium) {
     .elements {
         flex-direction: row;
