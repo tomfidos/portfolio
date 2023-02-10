@@ -17,6 +17,7 @@
         font-family: $secondary-font;
         font-weight: 700;
         font-size: $heading-size;
+        text-transform: none;
     }
 
     .heading-bottom {
@@ -26,10 +27,6 @@
 
     button {
         @include button;
-    }
-    
-    button:hover {
-        color: $secondary-text-color;
     }
 
     @media all and (min-width: $medium) {

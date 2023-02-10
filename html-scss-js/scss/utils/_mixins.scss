@@ -3,7 +3,7 @@
     flex-wrap: wrap;
 }
 
-@mixin button($border-radius: 25px) {
+@mixin button($border-radius: 25px, $margin-x: 0) {
     border-style: none;
     background-color: $primary-background-color;
     color: $mobile-text-color;
@@ -13,4 +13,10 @@
     width: 200px;
     cursor: pointer;
     border-radius: $border-radius;
+    margin: $basis-margin $margin-x;
+
+    &:hover {
+        background-color: $secondary-background-color;
+        color: $secondary-text-color;
+    }
 }

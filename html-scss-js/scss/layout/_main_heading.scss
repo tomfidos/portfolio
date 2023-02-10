@@ -18,44 +18,48 @@
             font-weight: 700;
             font-size: $smallest-size;
             text-transform: uppercase;
+            text-align: left;
         }
     
         .main-heading-middle {
             font-family: $secondary-font;
             font-weight: 700;
             font-size: 50px;
+            text-transform: none;
         }
     
         .main-heading-bottom {
             font-size: $primary-font-size;
             font-weight: 400;
+            text-align: left;
         }
     
         .actions {
             display: flex;
 
-            %buttons {
-                margin-right: $basis-margin;
-            }
-
-            %buttons:hover {
-                color: $secondary-text-color;
-            }
-
             .reserve {
-                @include button(0px);
-                @extend %buttons;
+                @include button(0px, $basis-margin);
             }
 
             .watch-story {
                 background-color: $mobile-text-color;
-                @extend %buttons;
+                color: $primary-text-color;
                 width: $basic-button-height;
+                height: $basic-button-height;
                 border-radius: 50%;
+                border-style: solid;
+                margin-top: 1em;
+                margin-right: $basis-margin;
+                padding-top: 0.45em;
+
+                &:hover {
+                    color: $secondary-text-color;
+                }
             }
 
             p {
                 font-size: $smallest-size;
+                padding-top: 0.9em;
             }
         }
     }
