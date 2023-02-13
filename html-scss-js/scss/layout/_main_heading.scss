@@ -68,7 +68,8 @@
         display: none;
         position: absolute;
         right: 0;
-        top: 82px;
+        top: 0;
+        z-index: -1;
     }
 
     @media all and (min-width: $small) {
