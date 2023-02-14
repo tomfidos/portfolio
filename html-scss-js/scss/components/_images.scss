@@ -11,7 +11,7 @@
 @media all and (min-width: $medium) {
 
     .box-image {
-        width: 0.5 * $extra-small;
+        width: $image-width-multiplicator * $extra-small;
         height: auto;
     }
 
