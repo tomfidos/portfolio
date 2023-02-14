@@ -60,9 +60,9 @@
     <div class="container">
         <div class="row py-12 px-23 my-0 mx-auto">
             <div class="col-12 col-md-6 col-xl-3 service">
-                <div class="image-wrapper" id="message">
+                <div class="image-wrapper" id="massage">
                     <i></i>
-                    <h3 class="service-name">message</h3>
+                    <h3 class="service-name">massage</h3>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-xl-3 service">
@@ -92,19 +92,19 @@
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores quasi, veritatis quo quisquam illo reiciendis voluptate itaque provident cum blanditiis vero id magni odit laboriosam corrupti repudiandae, repellendus quidem ullam.</p>
         <div class="elements">
             <div class="standard-element">
-                <img src="./img/procedures-bg-1.jpg" alt="massage therapy">
+                <img src="./img/procedures-bg-1.jpg" alt="massage therapy" class="box-image">
                 <h5 class="heading">massage therapy</h5>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam animi dicta perspiciatis quos quas itaque hic inventore amet magni minima.</p>
                 <button>read more</button>
             </div>
             <div class="standard-element">
-                <img src="./img/procedures-bg-2.jpg" alt="massage therapy">
+                <img src="./img/procedures-bg-2.jpg" alt="massage therapy" class="box-image">
                 <h5 class="heading">beauty care</h5>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam animi dicta perspiciatis quos quas itaque hic inventore amet magni minima.</p>
                 <button>read more</button>
             </div>
             <div class="standard-element">
-                <img src="./img/procedures-bg-3.jpg" alt="massage therapy">
+                <img src="./img/procedures-bg-3.jpg" alt="massage therapy" class="box-image">
                 <h5 class="heading">executive reflexology</h5>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam animi dicta perspiciatis quos quas itaque hic inventore amet magni minima.</p>
                 <button>read more</button>
@@ -149,19 +149,21 @@
         <img src="./img/contact-bg.jpg" alt="salt">
         <div class="container">
             <div class="row">
-                <input type="text" class="col-12 col-md-6 form-field">
-                <input type="email" class="col-12 col-md-6 form-field">
-                <input type="text" class="col-12 col-md-6 form-field">
+                <input type="text" class="col-12 col-md-6 form-field" placeholder="name">
+                <input type="email" class="col-12 col-md-6 form-field" placeholder="email address">
+                <input type="text" class="col-12 col-md-6 form-field" placeholder="phone number">
                 <select class="col-12 col-md-6 form-field">
                     <option selected>select service</option>
-                    <option>message</option>
+                    <option>massage</option>
                     <option>body treatment</option>
                     <option>face treatment</option>
                     <option>nails</option>
                 </select>
-                <input type="date" class="col-12 col-md-6 form-field">
-                <input type="time" class="col-12 col-md-6 form-field">
-                <input type="text" class="col-12 col-md-6 form-field">
+                <div class="col-12 form-field date-time-wrapper">
+                    <input type="date" class="date-time date-picker" placeholder="date">
+                    <input type="time" class="date-time time-picker" placeholder="time">
+                </div>
+                <input type="text" class="col-12 form-field" placeholder="your notes">
             </div>
         </div>
         <button>make an appointment</button>
