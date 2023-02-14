@@ -36,32 +36,6 @@ p {
     }
 }
 
-.standard-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.elements {
-    display: flex;
-    flex-direction: column;
-}
-
-.standard-element {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: $basis-padding $basis-padding;
-    margin: $basis-margin 0;
-    box-shadow: 0 5px 20px #f0f0f0;
-}
-
 form {
     background-color: $primary-background-color;
-}
-
-@media all and (min-width: $medium) {
-    .elements {
-        flex-direction: row;
-    }
 }
