@@ -3,6 +3,26 @@
     flex-wrap: wrap;
 }
 
+@mixin basis-menu($direction: row, $font-color: $mobile-text-color) {
+    @include flexbox;
+    flex-direction: $direction;
+    padding: 0 0;
+
+    .menu-point {
+        list-style: none;
+        padding: 1em 1em;
+        text-align: end;
+    }
+
+    .menu-link {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $font-color;
+        font-size: $smallest-size;
+        font-weight: 600;
+    }
+}
+
 @mixin button($border-radius: 25px, $margin-x: 0) {
     border-style: none;
     background-color: $primary-background-color;
