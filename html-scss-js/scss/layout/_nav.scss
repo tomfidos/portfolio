@@ -1,4 +1,4 @@
-.flex-header {
+.flex-nav {
     @include flexbox;
     justify-content: space-between;
     padding: $basis-padding 0;
@@ -47,24 +47,7 @@
         }
 
         .flex-menu {
-            @include flexbox;
-            flex-direction: column;
-            padding: 0 0;
-
-            .menu-point {
-                list-style: none;
-                padding: 1em 1em;
-                text-align: end;
-            }
-
-            .menu-link {
-                text-decoration: none;
-                text-transform: uppercase;
-                color: $mobile-text-color;
-                font-size: $smallest-size;
-                font-weight: 600;
-            }
-
+            @include basis-menu(column);
         }
     }
 
