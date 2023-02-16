@@ -20,13 +20,13 @@
     .date-time {
         background-color: $primary-background-color;
         color: $mobile-text-color;
+        text-transform: uppercase;
         flex: 50%;
         border: 0;
     }
 
     .date-time::before {
         content: attr(placeholder);
-        text-transform: uppercase;
     }
 
     .date-time::-webkit-datetime-edit {
@@ -39,10 +39,6 @@
 
     .date-time:focus::before {
         content: "";
-    }
-
-    .date-time:focus::-webkit-datetime-edit {
-        text-transform: uppercase;
     }
 
     .date-picker {
