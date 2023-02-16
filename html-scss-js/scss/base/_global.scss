@@ -25,6 +25,10 @@ p {
     text-align: center;
 }
 
+a {
+    text-decoration: none;
+}
+
 @media all and (min-width: $large-container) {
     .basic-container {
         max-width: $large-container;

@@ -27,6 +27,14 @@
 
     button {
         @include button;
+
+        a {
+            color: $mobile-text-color;
+            
+            &:hover {
+                color: $secondary-text-color;
+            }
+        }
     }
 
     @media all and (min-width: $medium) {

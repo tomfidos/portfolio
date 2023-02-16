@@ -39,6 +39,14 @@
 
             .reserve {
                 @include button(0px, $basis-margin);
+                
+                a {
+                    color: $mobile-text-color;
+
+                    &:hover {
+                        color: $secondary-text-color;
+                    }
+                }
             }
 
             .watch-story {
@@ -52,9 +60,14 @@
                 margin-right: $basis-margin;
                 padding-top: 0.45em;
 
-                &:hover {
-                    color: $secondary-text-color;
+                a {
+                    color: $primary-text-color;
+
+                    &:hover {
+                        color: $secondary-text-color;
+                    }
                 }
+
             }
 
             p {
