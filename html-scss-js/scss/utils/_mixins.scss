@@ -40,3 +40,12 @@
         color: $secondary-text-color;
     }
 }
+
+@mixin standard-element-basis {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: $basis-padding $basis-padding;
+    margin: $basis-margin 0;
+    max-width: ($image-width-multiplicator + 0.1) * $extra-small;
+}

@@ -1,3 +1,42 @@
+.standard-element-team {
+    @include standard-element-basis;
+    position: relative;
+}
+
 .team-info {
-    margin-top: 2* $basis-margin;
+    padding: 0 $basis-padding;
+    position: absolute;
+    top: 85%;
+    background-color: $mobile-text-color;
+
+    .team-socials {
+        @include flexbox;
+        justify-content: space-evenly;
+        display: none;
+    }
+}
+
+.team-info:hover {
+    top: 75%;
+
+    .team-socials {
+        display: flex;
+    }
+}
+
+@media all and (max-width: $medium) {
+    .standard-element-team {
+        margin-bottom: 4 * $basis-margin;
+
+        .team-info {
+            padding: $basis-padding 2 * $basis-padding;
+            position: absolute;
+            top: 85%;
+            background-color: $mobile-text-color;
+        }
+    
+        .team-info:hover {
+            top: 85%;
+        }
+    }
 }

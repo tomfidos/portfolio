@@ -14,14 +14,9 @@
 }
 
 .standard-element {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: $basis-padding $basis-padding;
-    margin: $basis-margin 0;
+    @include standard-element-basis;
     box-shadow: 0 5px 20px #f0f0f0;
-    max-width: ($image-width-multiplicator + 0.1) * $extra-small;
-
+    
     p {
         max-width: $image-width-multiplicator * $extra-small;
     }
