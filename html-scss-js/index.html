@@ -149,10 +149,10 @@
         <img src="./img/contact-bg.jpg" alt="salt">
         <div class="container">
             <div class="row">
-                <input type="text" class="col-12 col-md-6 form-field for-validation" placeholder="name">
-                <input type="email" class="col-12 col-md-6 form-field for-validation" placeholder="email address">
-                <input type="text" class="col-12 col-md-6 form-field for-validation" placeholder="phone number">
-                <select class="col-12 col-md-6 form-field for-validation">
+                <input type="text" class="col-12 col-md-6 form-field for-validation" id="name" placeholder="name">
+                <input type="email" class="col-12 col-md-6 form-field for-validation" id="email" placeholder="email address">
+                <input type="text" class="col-12 col-md-6 form-field for-validation" id="phone" placeholder="phone number">
+                <select class="col-12 col-md-6 form-field for-validation" id="service">
                     <option selected>select service</option>
                     <option>massage</option>
                     <option>body treatment</option>
@@ -160,10 +160,11 @@
                     <option>nails</option>
                 </select>
                 <div class="col-12 form-field date-time-wrapper">
-                    <input type="date" class="date-time date-picker" placeholder="date">
-                    <input type="time" class="date-time time-picker" placeholder="time">
+                    <!-- TODO: add for-validation class -->
+                    <input type="date" class="date-time date-picker" id="date" placeholder="date">
+                    <input type="time" class="date-time time-picker" id="time" placeholder="time">
                 </div>
-                <input type="text" class="col-12 form-field for-validation" placeholder="your notes">
+                <input type="text" class="col-12 form-field for-validation" id="notes" placeholder="your notes">
             </div>
         </div>
         <button id="appointment-button">make an appointment</button>

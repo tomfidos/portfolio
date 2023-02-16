@@ -12,9 +12,10 @@ $('.menu-close').click(function() {
 /* Appointment form handling
     - form validation -     */
 $('#appointment-button').click(function(e) {
-    const warningParagraph = $('.request p');
-    if (warningParagraph.attr('id') === 'warning') {
-        warningParagraph.remove();
+    const infoParagraph = $('.request p');
+    const id = infoParagraph.attr('id');
+    if (id === 'warning' || id === 'error' || id === 'feedback') {
+        infoParagraph.remove();
     }
 
     let areFieldsFilledIn = true;
@@ -35,10 +36,57 @@ $('#appointment-button').click(function(e) {
         $('.request').last().css({
             'color': 'darkred',
             'text-transform': 'uppercase',
-            'font-size': '$box-heading-size',
+            'font-size': '1em',
             'font-weight': '600',
         });
-        e.preventDefault();
+    } else {
+        submitForm();
     }
 
+    e.preventDefault();
 });
+
+/* Appointment form handling
+    - form submission -     */
+const submitForm = () => {
+
+    fetch('https://akademia108.pl/api/ajax/post-appointment.php', {
+        headers: {'Content-Type': 'application/json'},
+        method: 'POST',
+        mode: 'cors',
+        body: JSON.stringify({
+            'name': $('#name').val().trim(),
+            'email': $('#email').val().trim(),
+            'service': $('#service').val(),
+            'phone': $('#phone').val().trim(),
+            'date': $('#date').val(),
+            'time': $('#time').val(),
+            'message': $('#message').val(),
+        }),
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log(data);
+        if (data.errors) {
+            console.error('Error: ', data.messages.join('; '));
+            $('.request').append('<p id="error">Wysłanie formularza się nie powiodło</p>');
+            $('#error').css({
+                'color': 'darkred',
+                'text-transform': 'uppercase',
+                'font-size': '1em',
+                'font-weight': '600',
+            });
+        } else {
+            $('.request').append(`<p id="feedback">Dziękujemy ${data.appointment.name}. Zostałeś zapisany!</p>`);
+            $('#feedback').css({
+                'font-size': '1em',
+                'text-transform': 'capitalize',
+                'color': 'white',
+            });
+        }
+    })
+    .catch(error => {
+        console.error('Error: ', error);
+    });
+
+}
