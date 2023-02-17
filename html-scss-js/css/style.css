@@ -372,6 +372,10 @@ button:hover {
   text-transform: uppercase;
 }
 
+#request {
+  padding: 0;
+}
+
 .request {
   display: flex;
   flex-direction: column;
@@ -379,6 +383,9 @@ button:hover {
 }
 .request img {
   display: none;
+}
+.request .request-form {
+  margin-left: 12px;
 }
 .request .date-time-wrapper {
   display: flex;
@@ -423,6 +430,15 @@ button:hover {
   width: 97%;
 }
 
+@media all and (min-width: 768px) {
+  .request {
+    flex-direction: row;
+  }
+  .request img {
+    display: block;
+    max-width: 40%;
+  }
+}
 .contact {
   display: flex;
   flex-direction: column;

@@ -159,26 +159,28 @@
     <!-- Request form -->
     <form class="basic-container request" id="request">
         <img src="./img/contact-bg.jpg" alt="salt">
-        <div class="container">
-            <div class="row">
-                <input type="text" class="col-12 col-md-6 form-field for-validation" id="name" placeholder="name">
-                <input type="email" class="col-12 col-md-6 form-field for-validation" id="email" placeholder="email address">
-                <input type="tel" class="col-12 col-md-6 form-field for-validation" id="phone" placeholder="phone number">
-                <select class="col-12 col-md-6 form-field for-validation" id="service">
-                    <option selected>select service</option>
-                    <option>massage</option>
-                    <option>body treatment</option>
-                    <option>face treatment</option>
-                    <option>nails</option>
-                </select>
-                <div class="col-12 form-field date-time-wrapper">
-                    <input type="text" class="date-time date-picker for-validation" id="date" placeholder="date" onfocus="(this.type='date')" onblur="(this.type='text')">
-                    <input type="text" class="date-time for-validation" id="time" placeholder="time" onfocus="(this.type='time')" onblur="(this.type='text')">
+        <div class="request-form">
+            <div class="container">
+                <div class="row">
+                    <input type="text" class="col-12 col-md-6 form-field for-validation" id="name" placeholder="name">
+                    <input type="email" class="col-12 col-md-6 form-field for-validation" id="email" placeholder="email address">
+                    <input type="tel" class="col-12 col-md-6 form-field for-validation" id="phone" placeholder="phone number">
+                    <select class="col-12 col-md-6 form-field for-validation" id="service">
+                        <option selected>select service</option>
+                        <option>massage</option>
+                        <option>body treatment</option>
+                        <option>face treatment</option>
+                        <option>nails</option>
+                    </select>
+                    <div class="col-12 form-field date-time-wrapper">
+                        <input type="text" class="date-time date-picker for-validation" id="date" placeholder="date" onfocus="(this.type='date')" onblur="(this.type='text')">
+                        <input type="text" class="date-time for-validation" id="time" placeholder="time" onfocus="(this.type='time')" onblur="(this.type='text')">
+                    </div>
+                    <input type="text" class="col-12 form-field for-validation" id="notes" placeholder="your notes">
                 </div>
-                <input type="text" class="col-12 form-field for-validation" id="notes" placeholder="your notes">
             </div>
+            <button id="appointment-button">make an appointment</button>
         </div>
-        <button id="appointment-button">make an appointment</button>
     </form>
 
     <!-- Blog -->
