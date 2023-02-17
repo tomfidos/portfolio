@@ -7,6 +7,8 @@
     border-bottom: 1px solid $mobile-text-color;
     padding-left: 0;
     padding-top: $basis-padding;
+    width: 48%;
+    margin-right: $basis-margin;
 }
 
 .form-field::placeholder {
@@ -16,6 +18,8 @@
 .date-time-wrapper {
     display: flex;
     padding-right: 0;
+    width: 97%;
+    border: 0;
 
     .date-time {
         background-color: $primary-background-color;
@@ -23,6 +27,8 @@
         text-transform: uppercase;
         flex: 50%;
         border: 0;
+        border-bottom: 1px solid $mobile-text-color;
+        width: 48%;
     }
 
     .date-time::placeholder {
@@ -30,7 +36,18 @@
     }
 
     .date-picker {
-        padding-right: $basis-padding;
+        margin-right: $basis-margin;
     }
 
+}
+
+@media all and (max-width: $medium) {
+    .date-time-wrapper {
+        flex-direction: column;
+        padding-top: 0;
+
+        .date-time {
+            padding-top: $basis-padding;
+        }
+    }
 }

@@ -389,6 +389,9 @@ button:hover {
   background-color: #30383b;
   color: white;
 }
+.request #notes {
+  width: 97%;
+}
 
 .contact {
   display: flex;
@@ -567,6 +570,8 @@ h5 {
   border-bottom: 1px solid white;
   padding-left: 0;
   padding-top: 12px;
+  width: 48%;
+  margin-right: 12px;
 }
 
 .form-field::placeholder {
@@ -576,6 +581,8 @@ h5 {
 .date-time-wrapper {
   display: flex;
   padding-right: 0;
+  width: 97%;
+  border: 0;
 }
 .date-time-wrapper .date-time {
   background-color: #1ba4ce;
@@ -583,14 +590,25 @@ h5 {
   text-transform: uppercase;
   flex: 50%;
   border: 0;
+  border-bottom: 1px solid white;
+  width: 48%;
 }
 .date-time-wrapper .date-time::placeholder {
   color: white;
 }
 .date-time-wrapper .date-picker {
-  padding-right: 12px;
+  margin-right: 12px;
 }
 
+@media all and (max-width: 768px) {
+  .date-time-wrapper {
+    flex-direction: column;
+    padding-top: 0;
+  }
+  .date-time-wrapper .date-time {
+    padding-top: 12px;
+  }
+}
 .standard-container {
   display: flex;
   flex-direction: column;
