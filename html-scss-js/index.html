@@ -163,7 +163,7 @@
             <div class="row">
                 <input type="text" class="col-12 col-md-6 form-field for-validation" id="name" placeholder="name">
                 <input type="email" class="col-12 col-md-6 form-field for-validation" id="email" placeholder="email address">
-                <input type="text" class="col-12 col-md-6 form-field for-validation" id="phone" placeholder="phone number">
+                <input type="tel" class="col-12 col-md-6 form-field for-validation" id="phone" placeholder="phone number">
                 <select class="col-12 col-md-6 form-field for-validation" id="service">
                     <option selected>select service</option>
                     <option>massage</option>
@@ -172,9 +172,8 @@
                     <option>nails</option>
                 </select>
                 <div class="col-12 form-field date-time-wrapper">
-                    <!-- TODO: add for-validation class -->
-                    <input type="date" class="date-time date-picker" id="date" placeholder="date">
-                    <input type="time" class="date-time time-picker" id="time" placeholder="time">
+                    <input type="text" class="date-time date-picker for-validation" id="date" placeholder="date" onfocus="(this.type='date')" onblur="(this.type='text')">
+                    <input type="text" class="date-time for-validation" id="time" placeholder="time" onfocus="(this.type='time')" onblur="(this.type='text')">
                 </div>
                 <input type="text" class="col-12 form-field for-validation" id="notes" placeholder="your notes">
             </div>

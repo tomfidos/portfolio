@@ -25,20 +25,8 @@
         border: 0;
     }
 
-    .date-time::before {
-        content: attr(placeholder);
-    }
-
-    .date-time::-webkit-datetime-edit {
-        color: transparent;
-    }
-
-    .date-time:focus::-webkit-datetime-edit {
+    .date-time::placeholder {
         color: $mobile-text-color;
-    }
-
-    .date-time:focus::before {
-        content: "";
     }
 
     .date-picker {
