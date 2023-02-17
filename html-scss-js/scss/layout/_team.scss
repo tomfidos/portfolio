@@ -4,9 +4,9 @@
 }
 
 .team-info {
-    padding: 0 $basis-padding;
+    padding: 2 * $basis-padding 2 * $basis-padding;
     position: absolute;
-    top: 85%;
+    top: 75%;
     background-color: $mobile-text-color;
 
     .team-socials {
@@ -17,7 +17,7 @@
 }
 
 .team-info:hover {
-    top: 75%;
+    top: 65%;
 
     .team-socials {
         display: flex;

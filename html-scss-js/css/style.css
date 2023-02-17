@@ -330,9 +330,9 @@ button:hover {
 }
 
 .team-info {
-  padding: 0 12px;
+  padding: 24px 24px;
   position: absolute;
-  top: 85%;
+  top: 75%;
   background-color: white;
 }
 .team-info .team-socials {
@@ -343,7 +343,7 @@ button:hover {
 }
 
 .team-info:hover {
-  top: 75%;
+  top: 65%;
 }
 .team-info:hover .team-socials {
   display: flex;
@@ -386,6 +386,7 @@ button:hover {
 }
 .request .request-form {
   margin-left: 12px;
+  text-align: center;
 }
 .request .date-time-wrapper {
   display: flex;
