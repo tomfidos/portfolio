@@ -12,6 +12,8 @@ $('.menu-close').click(function() {
 /* Appointment form handling
     - form validation -     */
 $('#appointment-button').click(function(e) {
+    e.preventDefault();
+
     const infoParagraph = $('.request p');
     const id = infoParagraph.attr('id');
     if (id === 'warning' || id === 'error' || id === 'feedback') {
@@ -42,8 +44,6 @@ $('#appointment-button').click(function(e) {
     } else {
         submitForm();
     }
-
-    e.preventDefault();
 });
 
 /* Appointment form handling
@@ -58,7 +58,7 @@ const submitForm = () => {
             'name': $('#name').val().trim(),
             'email': $('#email').val().trim(),
             'service': $('#service').val(),
-            'phone': $('#phone').val().trim(),
+            'phone': $('#phone').val(),
             'date': $('#date').val(),
             'time': $('#time').val(),
             'message': $('#message').val(),

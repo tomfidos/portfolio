@@ -365,6 +365,7 @@ button:hover {
 }
 .blog-heading {
   text-transform: none;
+  height: 3em;
 }
 
 .date {
@@ -583,17 +584,8 @@ h5 {
   flex: 50%;
   border: 0;
 }
-.date-time-wrapper .date-time::before {
-  content: attr(placeholder);
-}
-.date-time-wrapper .date-time::-webkit-datetime-edit {
-  color: transparent;
-}
-.date-time-wrapper .date-time:focus::-webkit-datetime-edit {
+.date-time-wrapper .date-time::placeholder {
   color: white;
-}
-.date-time-wrapper .date-time:focus::before {
-  content: "";
 }
 .date-time-wrapper .date-picker {
   padding-right: 12px;
