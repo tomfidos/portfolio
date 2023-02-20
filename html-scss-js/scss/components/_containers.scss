@@ -1,0 +1,47 @@
+.standard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+        max-width: 3 * ($image-width-multiplicator * $extra-small);
+    }
+}
+
+.elements {
+    display: flex;
+    flex-direction: column;
+}
+
+.standard-element {
+    @include standard-element-basis;
+    box-shadow: 0 5px 20px #f0f0f0;
+    
+    p {
+        max-width: $image-width-multiplicator * $extra-small;
+    }
+}
+
+@media all and (min-width: $medium) {
+    .elements {
+        flex-direction: row;
+    }
+}
+
+@media all and (max-width: $medium) {
+
+    .standard-container p {
+        max-width: $extra-small - 80px;
+        height: auto;
+    }
+
+    .standard-element {
+        max-width: $extra-small - 70px;
+        height: auto;
+
+        p {
+            max-width: $extra-small - 80px;
+        }
+    }
+
+}

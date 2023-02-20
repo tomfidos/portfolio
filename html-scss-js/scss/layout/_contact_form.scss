@@ -1,0 +1,70 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $mobile-text-color;
+
+    .contact-heading {
+        color: $mobile-text-color;
+    }
+
+    .contact-info {
+        @include flexbox;
+        margin-bottom: 2 * $basis-margin;
+        justify-content: center;
+
+        img {
+            width: auto;
+            height: 50%;
+            align-self: center;
+            margin-right: $basis-margin;
+        }
+
+        p {
+            text-align: left;
+            margin-left: $basis-margin;
+        }
+    }
+
+    .row p {
+        text-transform: uppercase;
+    }
+
+    input {
+        border: 1px solid $mobile-text-color;
+        padding-left: $basis-padding;
+        vertical-align: middle;
+        margin-bottom: $basis-margin;
+    }
+
+    .comment {
+        padding-bottom: 10 * $basis-padding;
+    }
+
+    @media all and (min-width: $medium) {
+        
+        input {
+            border: 0;
+            border-bottom: 1px solid $mobile-text-color;
+            vertical-align: middle;
+            margin-bottom: 10%;
+        }
+
+        .contact-text {
+            width: 100%;
+        }
+
+    }
+
+    button {
+        background-color: white;
+        color: $primary-text-color;
+        margin-top: 2 * $basis-margin;
+    }
+
+    button:hover {
+        background-color: $secondary-background-color;
+        color: $mobile-text-color;
+    }
+
+}

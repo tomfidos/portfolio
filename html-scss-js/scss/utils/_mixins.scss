@@ -1,0 +1,51 @@
+@mixin flexbox {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@mixin basis-menu($direction: row, $font-color: $mobile-text-color) {
+    @include flexbox;
+    flex-direction: $direction;
+    padding: 0 0;
+
+    .menu-point {
+        list-style: none;
+        padding: 1em 1em;
+        text-align: end;
+    }
+
+    .menu-link {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $font-color;
+        font-size: $smallest-size;
+        font-weight: 600;
+    }
+}
+
+@mixin button($border-radius: 25px, $margin-x: 0) {
+    border-style: none;
+    background-color: $primary-background-color;
+    color: $mobile-text-color;
+    text-transform: uppercase;
+    padding: $basis-padding $basis-padding;
+    font-size: $primary-font-size;
+    width: 200px;
+    cursor: pointer;
+    border-radius: $border-radius;
+    margin: $basis-margin $margin-x;
+
+    &:hover {
+        background-color: $secondary-background-color;
+        color: $secondary-text-color;
+    }
+}
+
+@mixin standard-element-basis {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: $basis-padding $basis-padding;
+    margin: $basis-margin 0;
+    max-width: ($image-width-multiplicator + 0.1) * $extra-small;
+}

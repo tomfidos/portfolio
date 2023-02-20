@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: $primary-text-color;
+    font-family: $primary-font;
+}
+
+.basic-container {
+    max-width: $small-container;
+    width: $small-container;
+    padding: $basis-padding 23px;
+    margin: 0 auto;
+    margin-top: 2 * $basis-margin;
+}
+
+.heading {
+    margin: $basis-margin 0;
+}
+
+p {
+    margin: $basis-margin 0;
+    font-family: $primary-font;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media all and (min-width: $large-container) {
+    .basic-container {
+        max-width: $large-container;
+    }
+}
+
+@media all and (min-width: $extra-large-container) {
+    .basic-container {
+        max-width: $extra-large-container;
+    }
+}
+
+form {
+    background-color: $primary-background-color;
+}

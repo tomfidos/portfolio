@@ -1,0 +1,16 @@
+.form-field {
+    background-color: $primary-background-color;
+    color: $mobile-text-color;
+    text-transform: uppercase;
+    text-align: left;
+    border: 0;
+    border-bottom: 1px solid $mobile-text-color;
+    padding-left: 0;
+    padding-top: $basis-padding;
+    width: 48%;
+    margin-right: $basis-margin;
+}
+
+.form-field::placeholder {
+    color: $mobile-text-color;
+}

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spa</title>
+
+    <!-- Bootstrap styles -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <!-- Top navigation menu -->
+    <nav class="basic-container flex-nav">
+        <img src="./img/logo-txt.png" alt="Spa logo" class="menu-image">
+        <div class="hamburger"><i class="fas fa-bars"></i></div>
+        <div class="menu">
+            <div class="menu-close"><i class="fas fa-times"></i></div>
+            <ul class="flex-menu">
+                <li class="menu-point"><a href="#home" class="menu-link small-font-size">home</a></li>
+                <li class="menu-point"><a href="#about" class="menu-link small-font-size">about</a></li>
+                <li class="menu-point"><a href="#services" class="menu-link small-font-size">services</a></li>
+                <li class="menu-point"><a href="#procedures" class="menu-link small-font-size">features</a></li>
+                <li class="menu-point"><a href="#contact" class="menu-link small-font-size">contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main heading -->
+    <div class="basic-container flex-main-heading" id="home">
+       <img src="./img/header-flowers.png" alt="flower" class="flowers">
+       <div class="textes-and-actions">
+            <div>
+                <p class="main-heading-top">spa & beauty center</p>
+                <h3 class="heading main-heading-middle">Beauty and success starts here.</h3>
+                <p class="main-heading-bottom">Together creeping heaven upon third dominion be upon won't darkness rule hold it created</p>
+            </div>
+            <div class="actions">
+                <button class="reserve"><a href="#request">reserve now</a></button>
+                <button class="watch-story"><a href="https://www.youtube.com/" class="watch-link"><i class="fa-solid fa-play"></i></a></button>
+                <p>Watch our story</p>
+            </div>
+       </div>
+       <img src="./img/header-bg.png" alt="cosmetics" class="cosmetics">
+    </div>
+
+    <!-- About -->
+    <div class="basic-container about" id="about">
+        <img src="./img/logo.png" alt="flowers" class="about-image">
+        <p class="heading-top">about our spa center</p>
+        <h3 class="heading heading-middle">Come and you will be inspired</h3>
+        <p class="heading-bottom">It's the end of summer the sweltering heat makes human sweat in the night and makes the plants and trees wilt even in the moonlit nights. The eastern wind breeeze brings an eerie feeling that the monsoon clouds are soon coming, there is a strange silence in the ears, the sky gets darker and darker.</p>
+        <button><a href="#services">read more</a></button>
+    </div>
+
+    <!-- Services -->
+    <div class="container" id="services">
+        <div class="row py-12 px-23 my-0 mx-auto">
+            <div class="col-12 col-md-6 col-xl-3 service">
+                <div class="image-wrapper" id="massage">
+                    <i></i>
+                    <h3 class="service-name">massage</h3>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-3 service">
+                <div class="image-wrapper" id="body-treatment">
+                    <i></i>
+                    <h3 class="service-name">body treatment</h3>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-3 service">
+                <div class="image-wrapper" id="face-treatment">
+                    <i></i>
+                    <h3 class="service-name">face treatment</h3>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-3 service">
+                <div class="image-wrapper" id="nails">
+                    <i></i>
+                    <h3 class="service-name">nails</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Procedures -->
+    <div class="standard-container basic-container" id="procedures">
+        <h3>popular procedures</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores quasi, veritatis quo quisquam illo reiciendis voluptate itaque provident cum blanditiis vero id magni odit laboriosam corrupti repudiandae, repellendus quidem ullam.</p>
+        <div class="elements">
+            <div class="standard-element">
+                <img src="./img/procedures-bg-1.jpg" alt="massage therapy" class="box-image">
+                <h5 class="heading">massage therapy</h5>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam animi dicta perspiciatis quos quas itaque hic inventore amet magni minima.</p>
+                <button>read more</button>
+            </div>
+            <div class="standard-element">
+                <img src="./img/procedures-bg-2.jpg" alt="massage therapy" class="box-image">
+                <h5 class="heading">beauty care</h5>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam animi dicta perspiciatis quos quas itaque hic inventore amet magni minima.</p>
+                <button>read more</button>
+            </div>
+            <div class="standard-element">
+                <img src="./img/procedures-bg-3.jpg" alt="massage therapy" class="box-image">
+                <h5 class="heading">executive reflexology</h5>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam animi dicta perspiciatis quos quas itaque hic inventore amet magni minima.</p>
+                <button>read more</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Team -->
+    <div class="standard-container basic-container">
+        <h3>experienced team</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores quasi, veritatis quo quisquam illo reiciendis voluptate itaque provident cum blanditiis vero id magni odit laboriosam corrupti repudiandae, repellendus quidem ullam.</p>
+        <div class="elements">
+            <div class="standard-element-team">
+                <img src="./img/team-1.jpg" alt="Jenny" class="box-image">
+                <div class="team-info">
+                    <h5>jenny austin</h5>
+                    <p>Thai Massage</p>
+                    <div class="team-socials">
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook fa-lg"></i></i></a>
+                        <a href="https://twitter.com/"><i class="fa-brands fa-twitter fa-lg"></i></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram fa-lg"></i></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="standard-element-team">
+                <img src="./img/team-3.jpg" alt="David" class="box-image">
+                <div class="team-info">
+                    <h5>david hannan</h5>
+                    <p>Thai Massage</p>
+                    <div class="team-socials">
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook fa-lg"></i></i></a>
+                        <a href="https://twitter.com/"><i class="fa-brands fa-twitter fa-lg"></i></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram fa-lg"></i></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="standard-element-team">
+                <img src="./img/team-2.jpg" alt="Cheryl" class="box-image">
+                <div class="team-info">
+                    <h5>cheryl harris</h5>
+                    <p>Thai Massage</p>
+                    <div class="team-socials">
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook fa-lg"></i></i></a>
+                        <a href="https://twitter.com/"><i class="fa-brands fa-twitter fa-lg"></i></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram fa-lg"></i></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Request form -->
+    <form class="basic-container request" id="request">
+        <img src="./img/contact-bg.jpg" alt="salt">
+        <div class="request-form">
+            <div class="container">
+                <div class="row">
+                    <input type="text" class="col-12 col-md-6 form-field for-validation" id="name" placeholder="name">
+                    <input type="email" class="col-12 col-md-6 form-field for-validation" id="email" placeholder="email address">
+                    <input type="tel" class="col-12 col-md-6 form-field for-validation" id="phone" placeholder="phone number">
+                    <select class="col-12 col-md-6 form-field for-validation" id="service">
+                        <option selected>select service</option>
+                        <option>massage</option>
+                        <option>body treatment</option>
+                        <option>face treatment</option>
+                        <option>nails</option>
+                    </select>
+                    <div class="col-12 form-field date-time-wrapper">
+                        <input type="text" class="date-time date-picker for-validation" id="date" placeholder="date" onfocus="(this.type='date')" onblur="(this.type='text')">
+                        <input type="text" class="date-time for-validation" id="time" placeholder="time" onfocus="(this.type='time')" onblur="(this.type='text')">
+                    </div>
+                    <input type="text" class="col-12 form-field for-validation" id="notes" placeholder="your notes">
+                </div>
+            </div>
+            <button id="appointment-button">make an appointment</button>
+        </div>
+    </form>
+
+    <!-- Blog -->
+    <div class="standard-container basic-container">
+        <h3>latest from blog</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores quasi, veritatis quo quisquam illo reiciendis voluptate itaque provident cum blanditiis vero id magni odit laboriosam corrupti repudiandae, repellendus quidem ullam.</p>
+        <div class="elements">
+            <div class="standard-element">
+                <img src="./img/blog-1.jpg" alt="makeup" class="box-image">
+                <p class="date">relaxation i january 27, 2023<span></span></p>
+                <h5 class="blog-heading">Had seed herb grass mids</h5>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam animi dicta perspiciatis quos quas itaque hic inventore amet magni minima, harum vel consectetur consequuntur iure eligendi velit, reiciendis porro ipsa!</p>
+                <button>read more</button>
+            </div>
+            <div class="standard-element">
+                <img src="./img/blog-2.jpg" alt="feet-treatment" class="box-image">
+                <p class="date">relaxation i february 07, 2023<span></span></p>
+                <h5 class="blog-heading">Divid image unto creeping</h5>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam animi dicta perspiciatis quos quas itaque hic inventore amet magni minima, harum vel consectetur consequuntur iure eligendi velit, reiciendis porro ipsa!</p>
+                <button>read more</button>
+            </div>
+            <div class="standard-element">
+                <img src="./img/blog-3.jpg" alt="cosmetics" class="box-image">
+                <p class="date">relaxation i february 17, 2023<span></span></p>
+                <h5 class="blog-heading">Had seed herb grass mids</h5>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam animi dicta perspiciatis quos quas itaque hic inventore amet magni minima, harum vel consectetur consequuntur iure eligendi velit, reiciendis porro ipsa!</p>
+                <button>read more</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact form -->
+    <form class="basic-container contact" id="contact">
+        <h3 class="contact-heading">get in touch</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque illo quo in qui tempore, libero pariatur dolorem et nam iste cupiditate exercitationem soluta aperiam ut ad reiciendis nemo, quos minus.</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="contact-info">
+                        <img src="./img/icons/icon-map.png">
+                        <div>
+                            <p>848 e 28th st, brooklyn</p>
+                            <p>new york, usa</p>
+                        </div>
+                    </div>
+                    <div class="contact-info">
+                        <img src="./img/icons/icon-mail.png">
+                        <div>
+                            <p>example@leospa.com</p>
+                            <p>example@leospa.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-info">
+                        <img src="./img/icons/icon-tel.png">
+                        <div>
+                            <p>+02 365 2365 3265 (02)</p>
+                            <p>+02 365 2365 3265 (02)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <input type="text" class="col-12 col-md-6 form-field contact-text" placeholder="first name">
+                    <input type="email" class="col-12 col-md-6 form-field contact-text" placeholder="email address">
+                    <input type="text" class="col-12 col-md-6 form-field comment contact-text" placeholder="write comment">
+                </div>
+            </div>
+        </div>
+        <button>submit now</button>
+    </form>
+
+    <!-- Footer -->
+    <footer class="basic-container footer-nav">
+        <img src="./img/logo-txt.png" alt="Spa logo" class="footer-image">
+        <ul class="footer-menu">
+            <li class="menu-point"><a href="#home" class="menu-link small-font-size">home</a></li>
+            <li class="menu-point"><a href="#about" class="menu-link small-font-size">about</a></li>
+            <li class="menu-point"><a href="#services" class="menu-link small-font-size">services</a></li>
+            <li class="menu-point"><a href="#procedures" class="menu-link small-font-size">features</a></li>
+            <li class="menu-point"><a href="#contact" class="menu-link small-font-size">contact</a></li>
+        </ul>
+        <p><span>&#169;</span> copyright 2023</p>
+    </footer>
+
+    <!-- jQuery & Bootstrap import -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <!-- JS -->
+    <script src="./js/main.js"></script>
+    <!-- Custom icons -->
+    <script src="https://kit.fontawesome.com/6c6f6151ee.js" crossorigin="anonymous"></script>
+</body>
+</html>

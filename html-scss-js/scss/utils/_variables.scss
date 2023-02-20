@@ -1,0 +1,32 @@
+/* Fonts */
+$primary-font: 'Roboto', sans-serif;
+$secondary-font: 'Bellota', cursive;
+$primary-font-size: 16px;
+$smallest-size: 15px;
+$heading-size: 42px;
+$box-heading-size: 22px;
+
+/* Colors */
+$primary-background-color: #1ba4ce;
+$secondary-background-color: #30383b;
+$primary-text-color: #473452;
+$secondary-text-color: #888888;
+$mobile-text-color: white;
+
+/* Container */
+$small-container: 100%;
+$large-container: 960px;
+$extra-large-container: 1140px;
+
+/* Mobile breakpoints */
+$extra-small: 480px;
+$small: 576px;
+$medium: 768px;
+$large: 992px;
+$extra-large: 1200px;
+
+/* Miscs */
+$basis-margin: 12px;
+$basis-padding: 12px;
+$basic-button-height: $primary-font-size + 2 * $basis-padding;
+$image-width-multiplicator: 0.5;

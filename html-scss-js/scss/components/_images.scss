@@ -1,0 +1,18 @@
+.image-wrapper {
+    background-position: center center;
+    background-size: cover;
+}
+
+.box-image {
+    width: $extra-small - 80px;
+    height: auto;
+}
+
+@media all and (min-width: $medium) {
+
+    .box-image {
+        width: $image-width-multiplicator * $extra-small;
+        height: auto;
+    }
+
+}

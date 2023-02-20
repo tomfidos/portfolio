@@ -1,0 +1,134 @@
+.flex-main-heading {
+  display: flex;
+  justify-content: flex-start;
+
+  .flowers {
+    height: 75px;
+    width: auto;
+    padding-top: $basis-padding + 21px;
+    position: absolute;
+    left: 0;
+    top: 82px;
+  }
+
+  .textes-and-actions {
+    margin-left: 50px;
+
+    .main-heading-top {
+      font-family: $secondary-font;
+      font-weight: 700;
+      font-size: $smallest-size;
+      text-transform: uppercase;
+      text-align: left;
+    }
+
+    .main-heading-middle {
+      font-family: $secondary-font;
+      font-weight: 700;
+      font-size: 50px;
+      text-transform: none;
+    }
+
+    .main-heading-bottom {
+      font-size: $primary-font-size;
+      font-weight: 400;
+      text-align: left;
+    }
+
+    .actions {
+      display: flex;
+
+      .reserve {
+        @include button(0px, $basis-margin);
+
+        a {
+          color: $mobile-text-color;
+
+          &:hover {
+            color: $secondary-text-color;
+          }
+        }
+      }
+
+      .watch-story {
+        background-color: $mobile-text-color;
+        color: $primary-text-color;
+        width: $basic-button-height;
+        height: $basic-button-height;
+        border-radius: 50%;
+        border-style: solid;
+        margin-top: 1em;
+        margin-right: $basis-margin;
+        padding-top: 0.45em;
+
+        a {
+          color: $primary-text-color;
+
+          &:hover {
+            color: $secondary-text-color;
+          }
+        }
+      }
+
+      p {
+        font-size: $smallest-size;
+        padding-top: 0.9em;
+      }
+    }
+  }
+
+  .cosmetics {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+  }
+
+  @media all and (min-width: $small) {
+    .flowers {
+      height: 100px;
+      opacity: 50%;
+    }
+
+    .textes-and-actions .main-heading-middle {
+      max-width: 500px;
+    }
+  }
+
+  @media all and (min-width: $medium) {
+    .flowers {
+      height: 150px;
+    }
+
+    .cosmetics {
+      display: block;
+      width: 40%;
+    }
+
+    .textes-and-actions .main-heading-middle {
+      max-width: 600px;
+    }
+  }
+
+  @media all and (min-width: $large) {
+    .flowers {
+      height: 200px;
+    }
+  }
+
+  @media all and (min-width: $extra-large) {
+    .flowers {
+      height: 300px;
+    }
+
+    .cosmetics {
+      right: 0;
+      width: 30%;
+    }
+
+    .textes-and-actions .main-heading-middle {
+      max-width: 800px;
+    }
+  }
+}

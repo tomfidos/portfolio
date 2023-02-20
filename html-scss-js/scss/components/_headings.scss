@@ -1,0 +1,16 @@
+%heading-font {
+    font-family: $secondary-font;
+    color: $primary-text-color;
+}
+
+h3 {
+    @extend %heading-font;
+    font-size: $heading-size;
+    text-transform: capitalize;
+}
+
+h5 {
+    @extend %heading-font;
+    font-size: $box-heading-size;
+    text-transform: capitalize;
+}

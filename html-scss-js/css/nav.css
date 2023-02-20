@@ -1,0 +1,14 @@
+.flexContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.menuPoint {
+  list-style: none;
+  padding: 0 1em;
+}
+
+.menuLink {
+  text-decoration: none;
+  text-transform: uppercase;
+}/*# sourceMappingURL=nav.css.map */

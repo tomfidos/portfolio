@@ -1,0 +1,83 @@
+#request {
+    padding: 0;
+}
+
+.request {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+        display: none;
+    }
+
+    .request-form {
+        margin-left: $basis-margin;
+        text-align: center;
+    }
+
+    .date-time-wrapper {
+        display: flex;
+        padding-right: 0;
+        width: 97%;
+        border: 0;
+    
+        .date-time {
+            background-color: $primary-background-color;
+            color: $mobile-text-color;
+            text-transform: uppercase;
+            flex: 50%;
+            border: 0;
+            border-bottom: 1px solid $mobile-text-color;
+            width: 48%;
+        }
+    
+        .date-time::placeholder {
+            color: $mobile-text-color;
+        }
+    
+        .date-picker {
+            margin-right: $basis-margin;
+        }
+    
+    }
+    
+    @media all and (max-width: $medium) {
+        .date-time-wrapper {
+            flex-direction: column;
+            padding-top: 0;
+    
+            .date-time {
+                padding-top: $basis-padding;
+            }
+        }
+    }    
+
+    button {
+        background-color: white;
+        color: $primary-text-color;
+        margin-top: 2 * $basis-margin;
+    }
+
+    button:hover {
+        background-color: $secondary-background-color;
+        color: $mobile-text-color;
+    }
+
+    #notes {
+        width: 97%;
+    }
+
+}
+
+@media all and (min-width: $medium) {
+
+    .request {
+        flex-direction: row;
+
+        img {
+            display: block;
+            max-width: 40%;
+        }
+    }
+}
