@@ -87,7 +87,7 @@
 
 .flex-main-heading {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
 .flex-main-heading .flowers {
   height: 75px;
@@ -96,6 +96,9 @@
   position: absolute;
   left: 0;
   top: 82px;
+}
+.flex-main-heading .textes-and-actions {
+  margin-left: 50px;
 }
 .flex-main-heading .textes-and-actions .main-heading-top {
   font-family: "Bellota", cursive;
@@ -173,6 +176,9 @@
     height: 100px;
     opacity: 50%;
   }
+  .flex-main-heading .textes-and-actions .main-heading-middle {
+    max-width: 500px;
+  }
 }
 @media all and (min-width: 768px) {
   .flex-main-heading .flowers {
@@ -181,6 +187,9 @@
   .flex-main-heading .cosmetics {
     display: block;
     width: 40%;
+  }
+  .flex-main-heading .textes-and-actions .main-heading-middle {
+    max-width: 600px;
   }
 }
 @media all and (min-width: 992px) {
@@ -195,6 +204,9 @@
   .flex-main-heading .cosmetics {
     right: 0;
     width: 30%;
+  }
+  .flex-main-heading .textes-and-actions .main-heading-middle {
+    max-width: 800px;
   }
 }
 
