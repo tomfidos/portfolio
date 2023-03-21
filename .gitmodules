@@ -1,0 +1,3 @@
+[submodule "react-social-app"]
+	path = react-social-app
+	url = https://github.com/tomfidos/react-social-app.git
