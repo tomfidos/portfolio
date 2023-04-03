@@ -1,3 +1,6 @@
 [submodule "react-social-app"]
 	path = react-social-app
 	url = https://github.com/tomfidos/react-social-app.git
+[submodule "typescript/typescript-user-list"]
+	path = typescript/typescript-user-list
+	url = git@github.com:tomfidos/typescript-user-list.git
