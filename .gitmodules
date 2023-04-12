@@ -4,3 +4,6 @@
 [submodule "typescript/typescript-user-list"]
 	path = typescript/typescript-user-list
 	url = git@github.com:tomfidos/typescript-user-list.git
+[submodule "typescript/typescript-post-list-app"]
+	path = typescript/typescript-post-list-app
+	url = git@github.com:tomfidos/typescript-post-list-app.git
