@@ -7,3 +7,6 @@
 [submodule "typescript/typescript-post-list-app"]
 	path = typescript/typescript-post-list-app
 	url = git@github.com:tomfidos/typescript-post-list-app.git
+[submodule "redux-online-store"]
+	path = redux-online-store
+	url = git@github.com:tomfidos/redux-online-store.git
